@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Many</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+   <main class="flex items-center justify-center">
+    <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+           
+          <div class="artboard artboard-demo phone-1 overflow-scroll">
+            <div class="flex flex-col gap-4 items-center my-4">
+                <div class="w-28 rounded-md bg-slate-600 py-4 px-8">
+                    <h1 id="balance" class="text-center font-bold">10</h1>
+                </div>
+                <div class="flex flex-row gap-3">
+                    <button id="many-add" class="btn bg-blue-600 text-center font-bold py-1 px-2">Add Many</button>
+                    <button id="many-sent" class="btn bg-blue-600 text-center font-bold py-1 px-2">Sent Many</button>
+                    <button id="transcription" class="btn bg-blue-600 text-center font-bold py-1 px-2">Transcription</button>
+                    
+                </div>
+            </div>
+
+            <!-- add many  -->
+           <div id="add-many-form" class="card hidden bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="amout" type="number" placeholder="amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Password</span>
+                    </label>
+                    <input type="password" placeholder="password" class="input input-bordered" autocomplete="off" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="add-btn" class="btn btn-primary">Add Amount</button>
+                  </div>
+                </form>
+              </div>
+
+            <!-- cash out  -->
+            <div id="cash-out-form" class="card hidden bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Ampunt</span>
+                    </label>
+                    <input id="out-amount" type="number" placeholder="amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Password</span>
+                    </label>
+                    <input type="password" placeholder="password" class="input input-bordered" autocomplete="off" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="acash-out-btn" class="btn btn-primary">cash out</button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- transcriotion -->
+               <div id="transcrip-page">
+                <h1 class="font-bold hidden text-center text-3xl">Transcripton items</h1>
+               </div>
+          </div>
+        </div>
+      </div>
+   </main>
+
+
+
+
+   <script src="./js/add.js"></script>
+   <script src="./js/element.js"></script>
+   <script src="./js/cash_out.js"></script>
+   <script src="./js/add_many_page.js"></script>
+
+
+
+
+</body>
+
+</html>
